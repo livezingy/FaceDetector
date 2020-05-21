@@ -12,21 +12,22 @@ This is a small project about face detection , age and gender estimation using p
 # Acknowledgements
 
 1. [ diovisgood/agender ](https://github.com/diovisgood/agender) is a Excellent project. The author has studied a lot about existing Open-Source Projects for Gender and Age Estimation.Thanks very much for sharing!
-
 Based on the [ diovisgood/agender ](https://github.com/diovisgood/agender), The FaceDetector change the functions structure of main.py and Add menu to choose the detect source, the  model to detect faces, and the model of age and gender estimation.
 
 2. The test videos and images come from [Giving Harvard Students an iPhone 11 If They Can Answer THIS Question](https://www.youtube.com/watch?v=cSSFRim8OK8). It's a interesting video.Thanks very much for sharing!
 
 3. [Predict Age and Gender using Convolutional Neural Network and openCV](https://towardsdatascience.com/predict-age-and-gender-using-convolutional-neural-network-and-opencv-fd90390e3ce6) 
-
 The face detection is HAAR and the age and gender prediction is Caffenet. The interesting part in this article is the usage of CNN for age and gender predictions on video URLs with pafy and youtube_dl packages. But the youtube_dl often fail to get the video because the youtube measures. This article is very informative and interesting! Thanks very much for sharing!
 
 
 # Requirements
 
 python
+
 OpenCV-python
+
 keras/tensorflow
+
 [Install keras and tensorflow cpu on Windows](https://livezingy.com/install-keras-and-tensorflow-cpu-on-windows/)
 
 # User Manual
@@ -65,6 +66,20 @@ After confirming the inspection source and inspection model, press this option a
 If RUN with default, the project will detect with the videos, the Tensornet, the ssrnet. 
 
 # Project Architecture
+
+1. make choices from the menu and RUN from the menu.
+
+2. load the models of face/age/gender detection. Print the load time in the cmd.exe
+
+2. Get a smaller resized frame/image to Find faces. As it is faster to process small images and this merely does not affect quality.
+
+3. Use faces coordinates of a small frame to extract faces patches from original (big) frame/image.
+
+4. Convert and adjust faces patches to a format that model expects. Construct a blob with all faces.
+
+5. Pass a blob of faces through model(s) to get predicted genders and ages for all faces.
+
+6. Draw a rectangle around each face and a label with estimated gender and age. Print the process time in the cmd.exe.
 
 # Develop
 
