@@ -85,13 +85,15 @@ If RUN with default, the project will detect with the videos, the Tensornet, the
 
 If you want to add more face detection models or age gender detection models, you could do as following steps:
 
-1. Add the model name into faceList or ageList in menu.py.
+1. Prepare the model files and put them into the suitable folder.
 
-2. Add the load and detect function of the new model to main.py.
+2. Add the model name into faceList or ageList in menu.py.
 
-3. Add the model name and the function name to the load_face_dict/detect_face_dict/load_agender_dict/predictAgeGender_dict in main.py.
+3. Add the load and detect functions of the new model to main.py.
 
-   The model name in the dictionary should be consistent with the name in step1.
+4. Add the models name and the functions name to the load_face_dict/detect_face_dict/load_agender_dict/predictAgeGender_dict in main.py.
+
+   The model name in the dictionary should be consistent with the name in step2.
 
 
 
