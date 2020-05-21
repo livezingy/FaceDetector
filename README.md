@@ -38,7 +38,7 @@ videos: put the video(.mp4) to be detected in the folder videos/, Then choose th
 
 images: put the images to be detected in the folder images/, Then choose the "images" as the detect source.
 
-camera: if the camera is choosed as the detect source, the program will opencv the camera of the computer and detect what it capture.
+camera: if the camera is choosed as the detect source, the program will open the camera of the computer and detect what it capture.
 
 ## 2. choose the face detection model
 
