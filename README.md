@@ -7,7 +7,7 @@ This is a small project about face detection , age and gender estimation using p
 - choose the age and gender estimation caffemodel net or SSR-Net from the menu.
 - The project will show the process time of one frame/image. (Test on Intel Core i7-8550U CPU with 8G RAM, win10 x64)
 
-![image](https://livezingy.com/uploads/2020/05/faceAgenderDetector.gif)
+![image](https://github.com/livezingy/FaceDetector/blob/master/face1.gif)
 
 # Acknowledgements
 
@@ -28,7 +28,7 @@ OpenCV-python
 
 keras/tensorflow
 
-[Install keras and tensorflow cpu on Windows](https://livezingy.com/install-keras-and-tensorflow-cpu-on-windows/)
+Install keras and tensorflow cpu on Windows
 
 # User Manual
 
